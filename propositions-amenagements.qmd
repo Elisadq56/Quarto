@@ -71,20 +71,20 @@ chemin_pieton <- chemin_pieton %>%
     dangereux  == "t"                      ~ "Chemin dangereux",
     peu_circul == "t" & tiret == "t"        ~ "Voie peu circulée",
     peu_circul == "t" & is.na(tiret)        ~ "Chemin correct",
-    mi_correct == "t"        ~ "Chemin améliorable",
-    TRUE                                    ~ "Autre"
+    mi_correct == "t"        ~ "Chemin améliorable"
   ))
 
+chemin_pieton <- chemin_pieton %>% filter(!is.na(categorie))
 
 # --- Vélos : 3 catégories ---
 chemin_velo <- chemin_velo %>%
   mutate(categorie = case_when(
     a_amenage  == "t" ~ "Cheminement à aménager",
     correct    == "t" ~ "Aménagement correct",
-    non_carros == "t" ~ "Chemin non carrossable",
-    TRUE              ~ "Autre"
+    non_carros == "t" ~ "Chemin non carrossable"
   ))
 
+chemin_velo <-chemin_velo %>% filter(!is.na(categorie))
 
 ## -------------------------------------------------------------------------
 ## 4. Decalage geometrique pour eviter les superpositions
@@ -147,20 +147,27 @@ numerotation_p             <- st_transform(numerotation_p,             crs = 432
 ## 6. Palettes de couleurs (familles distinctes velo / pieton)
 ## -------------------------------------------------------------------------
  
-# Pietons : tons "froids" + rouge pour le danger, trait plein
+# Pietons
 pal_pieton <- colorFactor(
-  palette = c("Chemin dangereux"   = "#e31a1c",   # rouge vif
-              "Voie peu circulee"  = "#1f78b4",   # bleu
-              "Chemin correct"     = "#33a02c"),  # vert
-  domain = chemin_pieton$categorie
+  palette = c("#e31a1c", "#1f78b4", "#33a02c", "#FFCE00"),
+  domain = chemin_pieton$categorie,
+  levels = c(
+    "Chemin dangereux",
+    "Voie peu circulée",
+    "Chemin correct",
+    "Chemin améliorable"
+  )
 )
  
-# Velos : tons "chauds" (orange/brun), trait pointille pour renforcer la distinction
+# Velos 
 pal_velo <- colorFactor(
-  palette = c("Cheminement a amenager"  = "#ff7f00",  # orange
-              "Amenagement correct"     = "#b15928",  # brun/gold
-              "Chemin non carrossable"  = "#7f0000"), # marron fonce
-  domain = chemin_velo$categorie
+  palette = c("#ff7f00", "#095228", "#7f0000"),
+  domain = chemin_velo$categorie,
+  levels = c(
+    "Cheminement à aménager",
+    "Aménagement correct",
+    "Chemin non carrossable"
+  )
 )
  
 ## -------------------------------------------------------------------------
