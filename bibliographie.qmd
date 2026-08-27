@@ -1,8 +1,8 @@
 ---
 title: "Bibliographie"
 lang: fr
-author : "Prénom Nom"
-date : 2025-07-04
+author: Carine Flahaut
+date: 2026-03-24
 bibliography: bibliographie/biblio_zotero.bib
 nocite: '@*'
 ---

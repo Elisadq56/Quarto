@@ -1,9 +1,9 @@
 ---
-title: "Plans d'actions"
-subtitle: "... tableau, carte, graphe, inline code"
+title: "Points thématiques"
+subtitle: "Focus sur le stationnement, les TC, le covoiturage, les services vélo, liaisons, compatibilité des aménagement proposés, communication"
 lang: fr # pratiques, qqs trucs seront traduits automatiquement
 author: Carine Flahaut
-reviewer: Marinon Valentin
+reviewer: Marion Valentin
 date: 2026-03-24
 #date-modified: 2026-03-24
 toc: true  # toc of content = table des matières

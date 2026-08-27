@@ -3,7 +3,7 @@ title: "Plans d'actions"
 subtitle: "Plans d'actions de référence"
 lang: fr # pratiques, qqs trucs seront traduits automatiquement
 author: Carine Flahaut
-reviewer: Marinon Valentin
+reviewer: Marion Valentin
 date: 2026-03-24
 #date-modified: 2026-03-24
 toc: true  # toc of content = table des matières

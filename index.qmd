@@ -2,9 +2,9 @@
 # title: "Titre de l'étude"
 # subtitle: "Sous titre de l'étude"
 lang: fr
-author : "Carine Flahaut"
+author: "Carine Flahaut"
 reviewer: "Marion Valentin"
-date : 2026-03-2
+date: 2026-03-24
 lightbox: true
 resources: 
   - images/NLA_fond.jpg # nécessaire pour que ça soit embarqué pour le background, à adapter !
