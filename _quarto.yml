@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs # cf tuto : https://www.youtube.com/watch?v=vMNNOwriAbQ pas sûre d'à quoi ça sert
   resources:
     - css/fonts/
     
