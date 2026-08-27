@@ -288,8 +288,13 @@ carte
 
 Analyse des itinéaires : **Rue des sources**
 
-**Caractéristiques :** - Rue résidentielle peu circulée en journée sauf aux heures d’entrée et sortie de collège - Double-sens. - Circulation bus scolaire dans un sens
+**Caractéristiques :**
 
+-   Rue résidentielle peu circulée en journée sauf aux heures d’entrée et sortie de collège
+
+-   Double-sens
+
+-   Circulation bus scolaire dans un sens
 
 ::: {style="text-align:center;"}
 ![Propositions d'adaptations](images/cn1.png "texte infobulle"){fig-align="center" loading="lazy" width="350"}
@@ -305,29 +310,26 @@ Le marquage d’ellipses 30 permettront de rappeler aux usagers qu’ils travers
 
 Afin de donner plus de place aux cyclistes, une réflexion pourrait être menée pour mettre en sens unique cette rue, ainsi que les rues St Joseph et des Jardiniers. Afin de diminuer la largeur de la chaussée, le double-sens cyclable pourra être matérialisé par un marquage séparatif ou par la création d’un piste cyclable dans les secteurs les plus larges.
 
-::::::: columns
+:::::::: columns
 :::: {.column width="48%"}
-
 ::: {style="text-align:center;"}
 ![Piste cyclable 1.5 m](images/cn1-3.png "texte infobulle"){fig-align="center" loading="lazy" width="350"}
 :::
 
 Le double-sens cyclable pourra être matérialisé par un marquage séparatif adapté et des pictos vélos dans les sections les plus étroites
-
 ::::
 
 ::: {.column width="4%"}
 :::
 
-::: {.column width="48%"}
-
+:::: {.column width="48%"}
 ::: {style="text-align:center;"}
 ![Piste cyclable 2 m](images/cn1-4.png "texte infobulle"){fig-align="center" loading="lazy" width="350"}
 :::
 
 Le double-sens cyclable pourra être matérialisé par une piste cyclable unidirectionnelle de 2 m de large séparée par une bordure chanfreinée dans les sections les plus larges
-:::
-:::::::
+::::
+::::::::
 
 ### Secteur 2 {#sec-numero-N2}
 
