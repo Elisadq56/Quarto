@@ -1,0 +1,38 @@
+---
+title: "Glossaire"
+lang: fr
+author : "Prénom Nom"
+date : 2025-07-04
+---
+
+> Ce glossaire rassemble les principaux termes utilisés dans le cadre de cette étude
+
+<!-- mieux que term : definition, les h3 non numéroté permettent d'avoir une ancre linkable et un table of content
+term
+
+:   definition
+
+term
+
+:   definition
+
+Cerema
+
+:   Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement 
+-->
+
+### Terme {.unnumbered}
+
+Définition
+
+### Cerema {.unnumbered}
+
+Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement
+
+### Lorem Ipsum {.unnumbered}
+
+Etiam odio tortor, vestibulum ut iaculis sollicitudin, egestas quis augue. Praesent sed augue eu leo euismod malesuada sed quis dui. Donec suscipit metus eu maximus rhoncus. Fusce lobortis diam risus, nec interdum lectus porttitor iaculis. Sed ullamcorper, tortor eget congue rutrum, mi odio tincidunt felis, quis pellentesque magna libero nec quam. Nullam fringilla efficitur est ut consectetur. Fusce interdum mi ac lobortis mollis. Pellentesque commodo est id tellus consequat, sit amet finibus ex semper.
+
+### Etc... {.unnumbered}
+
+Ut eu enim leo. Aliquam tellus metus, pretium quis justo a, lacinia auctor purus. Sed tincidunt neque quis enim finibus, et rhoncus ipsum lobortis. Praesent a velit nec ipsum facilisis accumsan. Mauris feugiat, libero eu vehicula convallis, nunc tortor fermentum ligula, nec tempor ligula metus id lacus. Praesent et dictum eros. Suspendisse purus ipsum, semper sit amet nunc sit amet, blandit rhoncus tortor. Sed ut leo elit. Mauris gravida, turpis a pharetra elementum, massa velit porta ligula, ac tincidunt urna tellus vel odio. Nulla maximus mattis congue. Mauris dictum tortor leo, at vestibulum lacus sodales sit amet. In varius fringilla diam, quis faucibus lorem malesuada a. Curabitur consectetur turpis rutrum lorem pretium eleifend. Morbi posuere eros nec purus accumsan, ut pharetra diam pretium. Integer sollicitudin rutrum purus, eget laoreet lorem efficitur eget.

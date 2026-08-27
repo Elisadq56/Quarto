@@ -1,0 +1,43 @@
+$if(title)$
+<header id="title-block-header">
+  <h1 class="title">$title$</h1>
+  $if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+  $endif$
+
+  <div class="quarto-title-meta">
+    $if(author)$
+    <div class="quarto-title-meta-author">
+      <div class="quarto-title-meta-heading">AUTEUR·RICE</div>
+      <div class="quarto-title-meta-contents">
+        $for(author)$$author$$sep$, $endfor$
+      </div>
+    </div>
+    $endif$
+
+    $if(reviewer)$
+    <div class="quarto-title-meta-reviewer">
+      <div class="quarto-title-meta-heading">RELECTEUR·RICE</div>
+      <div class="quarto-title-meta-contents">
+        $for(reviewer)$$reviewer$$sep$, $endfor$
+      </div>
+    </div>
+    $endif$
+
+    $if(date)$
+    <div class="quarto-title-meta-date">
+      <div class="quarto-title-meta-heading">DATE DE PUBLICATION</div>
+      <div class="quarto-title-meta-contents">$date$</div>
+    </div>
+    $endif$
+    
+    $if(date-modified)$
+    <div class="quarto-title-meta-date-modified">
+      <div class="quarto-title-meta-heading">DATE DE MODIFICATION</div>
+      <div class="quarto-title-meta-contents">$date-modified$</div>
+    </div>
+    $endif$
+    
+  </div>
+</header>
+$endif$

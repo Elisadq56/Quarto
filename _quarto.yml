@@ -1,0 +1,99 @@
+project:
+  type: website
+  output-dir: docs # cf tuto : https://www.youtube.com/watch?v=vMNNOwriAbQ pas sûre d'à quoi ça sert
+  resources:
+    - css/fonts/
+    
+website:
+  title: "**Schéma des mobilités actives**<br>Nueil-Les-Aubiers<br><small>Fiches actions</small>"
+  back-to-top-navigation: true
+  favicon: "images/logo/favicon.png"
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "**Alert** - this is some information that you should pay attention to"
+  #   type: primary
+  #   position: below-navbar
+
+  navbar:
+    pinned: false # mettre à true pour avoir la barre de menu toujours affichée
+    logo: "images/logo/logo_cerema_rf_fab-vertical_1_10.png"
+    logo-alt: "CEREMA"
+        
+    # =========================================================
+    # 1. ACCEUIL
+    # =========================================================  
+    left:
+      - icon: house
+        href: index.qmd
+        text: Accueil  
+            
+      # =========================================================
+      # 2. ONGLET ÉTUDE 
+      # =========================================================
+      - icon: book
+        text: Étude
+        menu:
+    
+          # =========================================================
+          # 2.1. PLAN D’ACTIONS
+          # =========================================================
+          - text: Plan d’actions
+            href: plan-actions.qmd
+            icon: diagram-3
+    
+          # =========================================================
+          # 2.2. PROPOSITIONS D’AMÉNAGEMENTS
+          # =========================================================
+          - text: Propositions d’aménagements
+            href: propositions-amenagements.qmd
+            icon: geo-alt
+    
+          # =========================================================
+          # 2.3. POINTS THÉMATIQUES
+          # =========================================================
+          - text: Points thématiques
+            href: points-thematiques.qmd
+            icon: list-ul
+              
+      # =========================================================
+      # 3. ANNEXES
+      # =========================================================          
+      - icon: bi-journals
+        text: Annexes
+        menu:
+          - icon: book
+            href: bibliographie.qmd
+            text: Bibliographie
+          - icon: journal-bookmark
+            href: glossaire.qmd
+            text: Glossaire
+                
+      # =========================================================
+      # 4. CEREMA
+      # =========================================================  
+      - icon: people
+        href: presentation_cerema.qmd
+        text: Qui sommes-nous ?
+
+format:
+  html:
+    html-math-method: katex
+    theme: [default, custom.scss]
+    grid:
+      #sidebar-width: 350px
+      body-width: 950px
+      #margin-width: 300px
+      gutter-width: 2.5rem
+    include-in-header:
+      - text: |
+          <script type="text/javascript" src="js/print_all_tab_expand_collapse.js"></script>
+          <script type="text/javascript" src="js/active_even_dropdown_menu.js"></script>
+    template-partials:
+      - _partials/title-block.html
+    include-after-body: _partials\footer.html
+    toc: true
+    toc-location: right
+    toc-depth: 3
+
+editor: source

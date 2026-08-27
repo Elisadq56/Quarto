@@ -1,0 +1,2344 @@
+//-----------------------------------------------------------------------------------------------------------
+// Variable modifié par le theme flatly (pour exemple)
+//-----------------------------------------------------------------------------------------------------------
+
+/*-- scss:defaults --*/
+// Flatly 5.3.3
+// Bootswatch
+
+// $theme: "flatly" !default;
+
+//
+// Color system
+//
+
+// $white:    #fff !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #ecf0f1 !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #b4bcc2 !default;
+// $gray-600: #95a5a6 !default;
+// $gray-700: #7b8a8b !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
+// $black:    #000 !default;
+
+// $blue:    #2c3e50 !default;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+// $red:     #e74c3c !default;
+// $orange:  #fd7e14 !default;
+// $yellow:  #f39c12 !default;
+// $green:   #18bc9c !default;
+// $teal:    #20c997 !default;
+// $cyan:    #3498db !default;
+
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-200 !default;
+// $dark:          $gray-700 !default;
+
+// $min-contrast-ratio:   2.05 !default;
+
+// Links
+
+/*$link-color:                $success !default;*/
+// $link-color: #EF7757 !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+// $font-family-sans-serif:      Marianne, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+// "Segoe UI Symbol" !default;
+// $h1-font-size:                2rem !default;
+// $h2-font-size:                1.5rem !default;
+// $h3-font-size:                1.25rem !default;
+
+// Tables
+
+// $table-bg-scale:              0% !default;
+
+// Dropdowns
+
+// $dropdown-border-color:             $gray-400 !default;
+// $dropdown-link-color:               $gray-700 !default;
+// $dropdown-link-hover-color:         $white !default;
+// $dropdown-link-hover-bg:            $primary !default;
+
+// Navs
+
+// $nav-link-padding-y:                .5rem !default;
+// $nav-link-padding-x:                2rem !default;
+// $nav-link-disabled-color:           $gray-600 !default;
+
+// $nav-tabs-border-color:             $dropdown-border-color !default;
+// $nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color transparent !default;
+// $nav-tabs-link-active-color:        $success !default;
+// $nav-tabs-link-active-border-color: $nav-tabs-link-hover-border-color !default;
+
+
+// Navbar
+
+// $navbar-padding-y:                  1rem !default;
+// $navbar-dark-color:                 $white !default;
+// $navbar-dark-hover-color:           $success !default;
+// $navbar-dark-active-color:          $success !default;
+
+// $navbar-dark-brand-color:                 $white !default;
+// $navbar-dark-brand-hover-color:           $navbar-dark-hover-color !default;
+
+// Pagination
+
+// $pagination-color:                  $white !default;
+// $pagination-bg:                     $success !default;
+// $pagination-border-width:           0 !default;
+// $pagination-border-color:           transparent !default;
+// $pagination-hover-color:            $white !default;
+// $pagination-hover-bg:               darken($success, 15%) !default;
+// $pagination-hover-border-color:     transparent !default;
+// $pagination-active-bg:              $pagination-hover-bg !default;
+// $pagination-active-border-color:    transparent !default;
+// $pagination-disabled-color:         $gray-200 !default;
+// $pagination-disabled-bg:            lighten($success, 15%) !default;
+// $pagination-disabled-border-color:  transparent !default;
+
+// // List group
+
+// $list-group-hover-bg:               $gray-200 !default;
+// $list-group-disabled-bg:            $gray-200 !default;
+
+// Breadcrumbs
+
+// $breadcrumb-padding-y:              .375rem !default;
+// $breadcrumb-padding-x:              .75rem !default;
+// $breadcrumb-border-radius:          .25rem !default;
+
+// Close
+
+// $btn-close-color:            $white !default;
+// $btn-close-opacity:          .4 !default;
+// $btn-close-hover-opacity:    1 !default;
+
+
+/* === COULEURS PRINCIPALES === */
+$cerema-orange:       #EF7757;
+$cerema-bleu:         #292574;
+$cerema-bleu-moyen:   #8E84AE;
+$cerema-bleu-clair:   #C6BFD8;
+$cerema-bleu-pale:    #E7E4EF;
+
+/* === COULEURS DOMAINES === */
+$domaine-a-fonce:     #26216A;   /* Expertise & ingénierie territoriale */
+$domaine-a-moyen:     #827AAC;
+$domaine-a-pale:      #BDB8D6;
+
+$domaine-b-fonce:     #F7D05C;   /* Bâtiment */
+$domaine-b-moyen:     #FDEB7D;
+$domaine-b-pale:      #FEF3DB;
+
+$domaine-c-fonce:     #EF7757;   /* Mobilités */
+$domaine-c-moyen:     #F49D54;
+$domaine-c-pale:      #EBE6D6;
+
+$domaine-d-fonce:     #96AB5B;   /* Infrastructures de transport */
+$domaine-d-moyen:     #B0CC4E;
+$domaine-d-pale:      #EDF3D9;
+
+$domaine-e-fonce:     #448D60;   /* Environnement & risques */
+$domaine-e-moyen:     #60B467;
+$domaine-e-pale:      #DEEDDC;
+
+$domaine-f-fonce:     #5A71B4;   /* Mer & littoral */
+$domaine-f-moyen:     #7E97CE;
+$domaine-f-pale:      #E0E4F4;
+
+/* === R&I CARNOT === */
+$carnot-bleu-clair:   #5A71B4;
+$carnot-bleu-fonce:   #292574;
+$carnot-gris-clair:   #C6BFD8;
+$carnot-gris:         #818383;
+
+/* === COULEUR ADDITIONNELLE === */
+$background-error: #fde9e3;     /*repris du proto de design system*/
+
+/* === NEUTRES === */
+$blanc:               #FFFFFF;
+$noir:                #000000;
+$gris-clair:          #F5F4F9;
+$gris-moyen:          #DEDBE9;
+$gris-fonce:          #6f6f6f;
+
+/* === MAPPING COULEURS BOOTSTRAP === */
+$primary:       $cerema-bleu !default;
+$secondary:     $gris-moyen !default;
+$success:       $domaine-e-fonce !default;
+$info:          $domaine-f-pale !default;
+$warning:       $domaine-b-fonce !default;
+$danger:        $cerema-orange !default;
+$light:         $gris-clair !default;
+$dark:          $noir !default;
+
+
+
+/* === ESPACEMENTS === */
+$space-xs:   4px;
+$space-sm:   8px;
+$space-md:   16px;
+$space-lg:   24px;
+$space-xl:   40px;
+$space-2xl:  64px;
+$space-3xl:  96px;
+
+/* === RAYONS === */
+$radius-sm:   4px;
+$radius-md:   8px;
+$radius-lg:   16px;
+$radius-xl:   24px;
+$radius-full: 9999px;
+
+/* === OMBRES === */
+$shadow-sm:  0 1px 3px rgba(41,37,116,.08), 0 1px 2px rgba(41,37,116,.06);
+$shadow-md:  0 4px 16px rgba(41,37,116,.10), 0 2px 6px rgba(41,37,116,.07);
+$shadow-lg:  0 12px 40px rgba(41,37,116,.14), 0 4px 12px rgba(41,37,116,.08);
+$shadow-card: 0 2px 12px rgba(41,37,116,.07);
+
+/* === TRANSITIONS === */
+$transition-fast:   .15s ease;
+$transition-normal: .25s ease;
+$transition-slow:   .4s cubic-bezier(.16,1,.3,1);
+
+/* === LIEN === */
+$link-color: $cerema-orange;
+
+
+
+
+/* === Variables FONT === */
+$font-primary:        'Marianne','Helvetica', arial, sans-serif;
+$font-display:        'Marianne', 'Helvetica', arial, sans-serif;
+$font-citation:       'Spectral', 'Helvetica', Georgia, serif;
+$font-size-root: 16px !default;
+
+/* === MERMAID (schéma) === */
+// version dans les bleus
+// $mermaid-bg-color: $gris-clair; // Fond du diagramme
+// $mermaid-edge-color: $cerema-bleu; // Couleur des flèches (edges)
+// $mermaid-node-fg-color: $cerema-bleu; // Couleur de la bordure des nœuds
+// $mermaid-fg-color: $cerema-bleu; // Couleur du texte par défaut
+// $mermaid-fg-color--lighter: lighten($cerema-bleu, 10%); // Texte plus clair
+// $mermaid-fg-color--lightest: lighten($cerema-bleu, 20%); // Texte encore plus clair
+// $mermaid-font-family: $font-primary; // Police de caractères
+// $mermaid-label-bg-color: $gris-clair; // Fond des labels
+// $mermaid-label-fg-color: $noir; // Couleur du texte des labels
+// $mermaid-node-bg-color: $gris-clair ;//rgba($noir, 0.1); // fond de l'élément
+// $mermaid-node-fg-color: $cerema-bleu; // couleur de la bordure
+
+// version dans les oranges
+$mermaid-bg-color: $gris-clair; // fond pour l'ensemble du diagramme
+$mermaid-edge-color: $noir; // couleur de la flèche (mais pas les stroke du bout)
+$mermaid-node-fg-color: $noir; // ?
+$mermaid-fg-color: $noir; // ?
+$mermaid-fg-color--lighter: lighten($noir, 10%); // ?
+$mermaid-fg-color--lightest: lighten($noir, 20%); // ?
+$mermaid-font-family: $font-primary; // police d'écriture
+$mermaid-label-bg-color: $gris-clair; // ?
+$mermaid-label-fg-color: $blanc; // couleur de l'écriture
+$mermaid-node-bg-color: $cerema-orange ;//rgba($noir, 0.1); // fond de l'élément
+$mermaid-node-fg-color: $cerema-bleu; // couleur de la bordure
+
+/*-- scss:rules --*/
+
+/* === POLICES D'ECRITURE === */
+// Marianne Regular
+@font-face{
+  font-family: "Marianne";
+  src: url("css/fonts/Marianne-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+// Marianne Bold
+@font-face {
+  font-family: "Marianne";
+  src: url("css/fonts/Marianne-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+// Marianne Light
+@font-face {
+  font-family: "Marianne";
+  src: url("/css/fonts/Marianne-Light.woff2") format("woff2");
+  font-weight: 200 ;
+  font-style: normal;
+}
+
+//Spectral Medium
+@font-face {
+  font-family: "Spectral";
+  src: url("css/fonts/Spectral-Medium.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+//-----------------------------------------------------------------------------------------------------------
+// Partie custom faite par Arthur et Guillaume
+//-----------------------------------------------------------------------------------------------------------
+
+/* ============================================================
+   CEREMA DESIGN SYSTEM — CSS CUSTOM PROPERTIES
+   ============================================================ */
+
+
+//=================================================================================================================================
+
+// variables intermédiaires ici pour régler plus facilement les couleurs,
+//  version bleue
+$sidebar-bg : $cerema-bleu;
+$sidebar-border-right-color: $cerema-bleu;
+$sidebar-title-a-color: $blanc;
+$sidebar-item-text-color: $blanc;
+$sidebar-item-text-hover-bg: $cerema-bleu-moyen;
+$sidebar-item-text-hover-color: $blanc;
+$sidebar-border-left-active-section: $cerema-bleu-pale;
+$sidebar-item-text-active-bg: $cerema-orange;
+$sidebar-item-text-active-color: $blanc;
+
+// $sidebar-bg : $blanc;
+// $sidebar-border-right-color: $gris-moyen;
+// $sidebar-title-a-color: $noir;
+// $sidebar-item-text-color: $noir;
+// $sidebar-item-text-hover-bg: $gris-clair;
+// $sidebar-item-text-hover-color: $noir;
+// $sidebar-border-left-active-section: $cerema-bleu;
+// $sidebar-item-text-active-bg: $gris-clair;
+// $sidebar-item-text-active-color: $cerema-bleu;
+
+/* === SIDEBAR  === */
+/* ── Sidebar container ── */
+#quarto-sidebar {
+  background: $sidebar-bg;
+  border-right: 1px solid $sidebar-border-right-color !important;
+}
+
+/* ── Brand / header ── */
+.sidebar-header {
+  font-weight: 500 !important;
+  letter-spacing: -.01em !important;
+}
+
+.sidebar-title a {
+  font-weight: 500 !important;
+  font-size: 1.3rem !important;
+  color: $sidebar-title-a-color !important;
+  text-decoration: none !important;
+  letter-spacing: -.01em !important;
+}
+
+#quarto-sidebar .sidebar-header .sidebar-logo-link,
+#quarto-sidebar .sidebar-header a.sidebar-logo-link {
+  width: 100% !important;
+  padding: 0 !important;
+
+}
+
+#quarto-sidebar .sidebar-header .sidebar-logo-link img.sidebar-logo {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  padding: 1rem !important;
+  background: $blanc;
+}
+
+/* ── Search ── */
+.sidebar-search {
+  margin: $space-md 0;
+}
+
+/* ── Section headers (équivalent .ds-sidebar-section) ── */
+.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
+  font-size: .725rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  // color: $cerema-bleu-pale;
+  color: $sidebar-item-text-color;
+  // margin: $space-lg 0 $space-sm;
+  // padding: 0;
+  // pointer-events: none;
+  // cursor: default;
+}
+
+.sidebar-item-section > .sidebar-item-container .sidebar-item-toggle {
+  // color: $cerema-bleu-pale;
+  color: $sidebar-item-text-color
+}
+
+/* ── Items de navigation ── */
+.sidebar-item-text.sidebar-link {
+  display: block;
+  text-decoration: none;
+  font-size: .825rem;
+  font-weight: 500;
+  // color: $cerema-bleu-pale;
+  color: $sidebar-item-text-color;
+  padding: $space-xs $space-md;
+  border-radius: $radius-sm;
+  transition: all $transition-fast;
+  margin-bottom: 1px;
+}
+
+.sidebar-item-text.sidebar-link:hover {
+  background: $sidebar-item-text-hover-bg;
+  color: $sidebar-item-text-hover-color;
+}
+
+// Pour les section
+// on prépare une bordure transparente
+.sidebar-item.sidebar-item-section {
+  border-left: 3px solid transparent; /* réserve l'espace */
+  padding-left: 14px;
+  transition: border-color 0.2s;
+}
+
+// puis quand il y a un élément active on met la bordure à la section
+.sidebar-item.sidebar-item-section:has(.active)  {
+  border-left: 3px solid $sidebar-border-left-active-section;
+}
+
+.sidebar-item-text.sidebar-link.active {
+  background: $sidebar-item-text-active-bg;
+  color: $sidebar-item-text-active-color;
+}
+
+.sidebar-item-text.sidebar-link .chapter-number {
+  color: $sidebar-item-text-color;
+  // opacity: .8;
+}
+
+// pour les petits écran
+@media (max-width: 991.98px) {
+  // .quarto-page-breadcrumbs {
+  //   margin-bottom: 0rem;
+  // }
+  .quarto-secondary-nav nav.quarto-page-breadcrumbs {
+      display: flex;
+      align-items: center;
+      padding-right: 1em;
+      margin-left: -0em;
+      margin-bottom: 0rem;
+  }
+}
+
+//  spécifique au mode book qui a juste la secondary nav
+//  un js, uniquement pour le yaml book permet de cloner le nécessaire pour l'avoir au dessus.
+.ds-mobile-brand {
+  display: none;
+
+  @media (max-width: 991.98px) {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: $blanc;
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+
+    .ds-mobile-brand-logo {
+      border-radius: 0px;
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+
+    .ds-mobile-brand-title {
+      font-size: 0.75rem;
+      line-height: 1.3;
+      margin: 0;
+      padding: 0;
+      padding-left: 1rem;
+      border-left: 1px solid $gris-moyen;
+
+      a {
+        color: $noir;
+        text-decoration: none;
+      }
+
+      strong { font-size: 0.8rem; }
+      small { font-size: 0.7rem; opacity: 0.75; }
+    }
+  }
+}
+
+
+/* === Sidebar VERSION 3 bleue plus discret design system === */
+
+// /* ── Sidebar container ── */
+// #quarto-sidebar {
+//   background: $gris-clair;
+// }
+
+// /* ── Brand / header ── */
+// .sidebar-header {
+//   font-weight: 800 !important;
+//   letter-spacing: -.01em !important;
+// }
+
+// .sidebar-title a {
+//   font-weight: 800 !important;
+//   font-size: 1.3rem !important;
+//   color: $cerema-bleu !important;
+//   text-decoration: none !important;
+//   letter-spacing: -.01em !important;
+// }
+
+// #quarto-sidebar .sidebar-header .sidebar-logo-link,
+// #quarto-sidebar .sidebar-header a.sidebar-logo-link {
+//   width: 100% !important;
+//   padding: 0 !important;
+
+// }
+
+// #quarto-sidebar .sidebar-header .sidebar-logo-link img.sidebar-logo {
+//   width: 100% !important;
+//   max-width: 100% !important;
+//   height: auto !important;
+//   object-fit: contain !important;
+// }
+
+// /* ── Search ── */
+// .sidebar-search {
+//   margin: $space-md 0;
+// }
+
+// /* ── Section headers (équivalent .ds-sidebar-section) ── */
+// .sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
+//   font-size: .65rem;
+//   font-weight: 700;
+//   letter-spacing: .14em;
+//   text-transform: uppercase;
+//   color: $cerema-bleu-moyen;
+//   // margin: $space-lg 0 $space-sm;
+//   // padding: 0;
+//   // pointer-events: none;
+//   // cursor: default;
+// }
+
+// .sidebar-item-section > .sidebar-item-container .sidebar-item-toggle {
+//   color: $cerema-bleu;
+// }
+
+// /* ── Items de navigation ── */
+// .sidebar-item-text.sidebar-link {
+//   display: block;
+//   text-decoration: none;
+//   font-size: .84rem;
+//   font-weight: 500;
+//   color: $cerema-bleu;
+//   padding: $space-xs $space-md;
+//   border-radius: $radius-sm;
+//   transition: all $transition-fast;
+//   margin-bottom: 1px;
+// }
+
+// .sidebar-item-text.sidebar-link:hover {
+//   background: $cerema-bleu-clair;
+//   color: $blanc;
+// }
+
+// // Pour les section
+// // on prépare une bordure transparente
+// .sidebar-item.sidebar-item-section {
+//   border-left: 3px solid transparent; /* réserve l'espace */
+//   padding-left: 14px;
+//   transition: border-color 0.2s;
+// }
+
+// // puis quand il y a un élément active on met la bordure à la section
+// .sidebar-item.sidebar-item-section:has(.active)  {
+//   border-left: 3px solid $cerema-bleu;
+// }
+
+// .sidebar-item-text.sidebar-link.active {
+//   background: $cerema-bleu;
+//   color: $blanc;
+// }
+
+// .sidebar-item-text.sidebar-link .chapter-number {
+//   color: $cerema-bleu-moyen;
+//   opacity: .8;
+// }
+
+/* === NAVBAR === */
+
+// /* =========================================================
+//    HEADER / NAVBAR QUARTO SUR DEUX LIGNES POUR LES GROS SITES
+// ========================================================= */
+
+// /* couleurs globales */
+// #quarto-header,
+// #quarto-header a,
+// #quarto-header .nav-link,
+// #quarto-header .menu-text,
+// #quarto-header .breadcrumb,
+// #quarto-header .breadcrumb a,
+// #quarto-header .bi {
+//   color: $noir;
+//   //color: $cerema-bleu;
+// }
+
+
+// /* ── NAVBAR WRAPPER ──────────────────────────────────── */
+// #quarto-header .navbar {
+//   padding: 0 $space-xl;
+//   background-color: $blanc;
+//   border-bottom: 1px solid $gris-moyen;
+//   box-shadow: $shadow-sm;
+//   font-size: .85rem;
+//   flex-direction: column;
+//   align-items: stretch;
+// }
+
+// #quarto-header .navbar-nav {
+//   margin: auto;
+// }
+
+// #quarto-header .navbar > .container-fluid {
+//   flex-direction: column;
+//   align-items: stretch;
+//   padding: 0;
+//   gap: 0;
+// }
+
+// /* ── RANGÉE 1 : logo + titre + search ───────────────── */
+// /* brand-container et #quarto-search sont frères dans
+//    .container-fluid → on les met en row sur cette rangée */
+// #quarto-header .navbar-brand-container {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   gap: $space-md;
+//   margin: 0 !important;
+//   padding: $space-sm 0;
+//   /* prend tout l'espace disponible, laisse le search à droite */
+//   flex: 1;
+//   min-width: 0;
+// }
+
+// /* on remet le container-fluid en row juste pour la rangée 1
+//    mais on gère le collapse via flex-wrap */
+// #quarto-header .navbar > .container-fluid {
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   padding: 0;
+// }
+
+// /* search poussé à l'extrême droite */
+// #quarto-header #quarto-search {
+//   margin-left: auto;
+//   flex-shrink: 0;
+//   align-self: center;
+//   order: 2;  
+//   filter: invert(1);
+// }
+
+// /* brand-container avant le search */
+// #quarto-header .navbar-brand-container {
+//   order: 1;
+// }
+
+// /* collapse toujours en dernière position, pleine largeur */
+// #quarto-header .navbar-collapse {
+//   order: 3;
+//   flex-basis: 100%;
+//   width: 100%;
+//   border-top: 1px solid $gris-clair;
+// }
+
+// /* ── LOGO ────────────────────────────────────────────── */
+// #quarto-header .navbar-logo {
+//   height: 70px !important;
+//   max-height: 70px !important;
+//   width: auto;
+//   flex-shrink: 0;
+// }
+
+// /* ── TITRE ───────────────────────────────────────────── */
+// #quarto-header .navbar-brand {
+//   color: $noir !important;
+//   display: flex;
+//   align-items: center;
+//   padding: 0;
+//   margin: 0;
+//   font-weight: 700;
+//   text-decoration: none;
+//   white-space: normal;
+//   line-height: 1.2;
+// }
+
+// /* ── NAVIGATION ──────────────────────────────────────── */
+// #quarto-header .navbar-nav {
+//   //color: $noir !important;  
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   // padding: 0;
+//   // margin: 0;
+// }
+
+// #quarto-header .navbar-nav .nav-link {
+//   padding: $space-xs $space-md;
+//   line-height: 1;
+//   border-radius: $radius-sm;
+//   transition:
+//     background-color $transition-fast,
+//     color $transition-fast;  
+//   padding-top: $space-md;
+//   padding-bottom: $space-md;
+//   display: flex;
+//   align-items: center;
+// }
+
+// #quarto-header .navbar-nav .nav-link:hover,
+// #quarto-header .navbar-nav .nav-link.active,
+// #quarto-header .dropdown-item.active
+// #quarto-header .nav-link.active .menu-text,
+// #quarto-header .navbar-nav .show > .nav-link {
+//   background-color: $gris-clair;
+//   color: $cerema-bleu !important;
+//   //color: $noir;
+// }
+
+// // en test
+// .dropdown-item.active {
+//   background-color: $gris-clair;
+// }
+
+// // .nav-link.dropdown-toggle.active {
+// //   color: red;
+// // }
+
+// /* ── DROPDOWN ────────────────────────────────────────── */
+// #quarto-header .dropdown-menu {
+//   padding: $space-sm;
+//   background-color: $blanc;
+//   border: 1px solid $gris-clair;
+//   border-radius: $radius-sm;
+//   box-shadow: $shadow-md;
+//   font-size: .75rem;
+// }
+
+// #quarto-header .dropdown-item {
+//   border-radius: $radius-sm;
+//   //color: $noir;
+//   transition:
+//     background-color $transition-fast,
+//     color $transition-fast;
+// }
+
+// #quarto-header .dropdown-item:hover,
+// #quarto-header .dropdown-item:focus {
+//   background-color: $gris-clair;
+//   color: $cerema-bleu;
+// }
+
+// /* ── MOBILE (< 992px) ────────────────────────────────── */
+// @media (max-width: 991.98px) {
+
+//   #quarto-header .navbar {
+//     padding: 0 $space-md;
+//   }
+
+//   /* toggler visible, dans le flow avant le brand */
+//   #quarto-header .navbar-toggler {
+//     order: 0;
+//     flex-shrink: 0;
+//     align-self: center;
+//     border: none;
+//     box-shadow: none;
+//     padding: $space-xs;
+//     color: $cerema-bleu;
+//   }
+
+//   #quarto-header .navbar-toggler-icon {
+//     filter: invert(1);
+//   }
+
+//   #quarto-header .navbar-brand-container {
+//     flex: 1;
+//     gap: $space-sm;
+//     padding: $space-xs 0;
+//   }
+
+//   /* search reste à droite en mobile, entre brand et bord */
+//   #quarto-header #quarto-search {
+//     order: 2;
+//     margin-left: auto;
+//   }
+
+//   #quarto-header .navbar-logo {
+//     height: 50px !important;
+//     max-height: 50px !important;
+//   }
+
+//   #quarto-header .navbar-brand {
+//     white-space: normal;
+//   }
+
+//   #quarto-header .navbar-collapse {
+//     flex-basis: 100%;
+//     border-top: 1px solid $gris-clair;
+//   }
+
+//   #quarto-header .navbar-nav {
+//     flex-direction: column;
+//     padding: $space-xs 0;
+//     margin-bottom: 0;
+//   }
+
+//   #quarto-header .navbar-nav .nav-link {
+//     padding: $space-sm $space-md;
+//     line-height: 1.4;
+//   }
+// }
+
+/* =========================================================
+   HEADER / NAVBAR QUARTO SUR UNE SEULE LIGNE (logo et navbar alignés)
+========================================================= */
+
+/* couleurs globales */
+#quarto-header,
+#quarto-header a,
+#quarto-header .nav-link,
+#quarto-header .menu-text,
+#quarto-header .breadcrumb,
+#quarto-header .breadcrumb a,
+#quarto-header .navbar-toggler,
+#quarto-header .bi {
+  color: $noir;
+}
+
+/* navbar */
+#quarto-header .navbar {
+  // padding: 0 $space-xl;
+  padding: 0; 
+  background-color: $blanc;
+  border-bottom: 1px solid $gris-moyen;
+  box-shadow: $shadow-sm;
+}
+
+#quarto-header .navbar-collapse {
+  align-self: stretch;
+  margin: 0rem !important;
+  padding: 0rem !important;
+}
+
+#quarto-header .navbar-nav {
+  align-self: stretch;
+  margin: 0rem !important;
+  padding: 0rem !important;
+}
+
+/* conteneur logo + titre */
+#quarto-header .navbar-brand-container {
+  display: flex;
+  align-items: center;
+  gap: $space-md;
+  margin-right: $space-2xl !important;
+}
+
+/* logo */
+#quarto-header .navbar-logo {
+  height: 100px !important;
+  max-height: 100px !important;
+  width: auto;
+  flex-shrink: 0;
+  padding: 0.8rem;
+  border-radius: 0px;
+
+  // bricolage non avouable
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(
+    to bottom,
+    transparent 25%,
+    $gris-moyen 25%,
+    $gris-moyen 75%,
+    transparent 75%
+  ) 1;
+}
+
+
+
+/* titre du site */
+#quarto-header .navbar-brand {
+  overflow: visible;
+  color: $noir !important;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+/* liens navigation */
+#quarto-header .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#quarto-header .navbar-nav .nav-link {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+
+  display: flex;
+  align-items: center;
+
+  align-self: stretch;
+  margin: 0rem !important;
+
+  padding: 0 $space-sm;
+  border-radius: 0;
+  transition:
+    background-color $transition-fast,
+    color $transition-fast;
+}
+
+/* hover / actif */
+#quarto-header .navbar-nav .nav-link:hover,
+#quarto-header .navbar-nav .show > .nav-link {
+  background-color: $gris-clair;
+  text-decoration: none !important;
+}
+
+#quarto-header .navbar-nav .nav-link.active {
+  border-bottom: 2px solid $cerema-bleu;
+}
+
+#quarto-header .active .menu-text, #quarto-header .active .bi{
+  color: $cerema-bleu !important;
+}
+
+/* hamburger */
+#quarto-header .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  color: $cerema-bleu;
+}
+
+#quarto-header .navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+  filter: invert(1); // surement lié au fait que de base la navbar est en mode sombre ?
+}
+
+/* search */
+
+.navbar #quarto-search {
+  margin-left: 0rem;
+}
+
+#quarto-header #quarto-search {
+  filter: invert(1);
+}
+
+.aa-DetachedFormContainer {
+  padding: 2rem;
+}
+
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* dropdown */
+#quarto-header .dropdown-menu {
+  padding: $space-sm;
+  background-color: $blanc;
+  border: 1px solid $gris-clair;
+  border-radius: 0px;
+  box-shadow: $shadow-md;
+  font-size: .825rem;
+}
+
+#quarto-header .dropdown-item {
+  border-radius: 0px;
+  transition:
+    background-color $transition-fast,
+    color $transition-fast;
+}
+
+#quarto-header .dropdown-item:hover,
+#quarto-header .dropdown-item:focus {
+  background-color: $gris-clair;
+  color: $cerema-bleu;
+  text-decoration: none !important;
+}
+
+
+.dropdown-item.active {
+  background-color: $blanc;
+  border-left: 2px solid $cerema-bleu;
+}
+
+#quarto-header .dropdown-item.active .dropdown-text{
+  color: $cerema-bleu !important;
+}
+
+/* ── MOBILE (< 992px) ────────────────────────────────── */
+@media (max-width: 991.98px) {
+
+  #quarto-header .navbar {
+    // padding: 0 $space-sm;
+    padding: 0;    
+  }
+
+  #quarto-header .navbar-brand-container {
+    display: flex;
+    align-items: center;
+    // gap: $space-sm;
+    gap: 0;
+    margin-right: 0 !important;    
+  }
+
+  #quarto-header .navbar-brand {
+    white-space: normal;
+  }
+
+  #quarto-header .navbar-logo {
+    height: 58px !important;
+    // max-height: 36px !important;
+    // width: auto;
+    border-right: 1px solid $gris-moyen;
+  }
+
+  #quarto-header .navbar-nav {
+    flex-direction: column;
+    padding: $space-xs 0;
+  }
+
+  .navbar .navbar-toggler {
+    margin-right: 0em;
+  }
+  #quarto-header .navbar-title {
+    padding-left: $space-sm;
+    font-size: 0.75rem; // à voir à la pratique
+    strong { font-size: 0.8rem; }
+    small { font-size: 0.7rem; opacity: 0.75; }
+  }
+
+  #quarto-header .navbar-nav .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  #quarto-header .navbar-nav .nav-link {
+    padding: $space-sm $space-md;
+    line-height: 1.4;
+  }
+
+  #quarto-header .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid $gris-moyen;
+    margin-left: $space-md;
+  }
+
+  .aa-DetachedFormContainer {
+    padding: 0rem;
+  }
+
+  .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+    width: 18px;
+    height: 18px;
+  }
+  // à réfléchir, pas clair quand j'ai les deux niveaux menus et moins courant dans les sites web
+  // #quarto-header .navbar-toggler {
+  //   order: 4;
+  // }
+
+  // à réfléchir si on le veut ou pas dans la version mobile, ça fait beaucoup d'infos...
+  // #quarto-header #quarto-search {
+  //   display: none;
+  // }
+}
+
+/* === TYPOGRAPHIE === */
+body {  
+  font-family: $font-primary !important;
+  font-size: 16px;
+  line-height: 1.6;
+  //color: $cerema-bleu;
+  //background: $blanc;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+//en attente
+h1{
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.02em !important;
+  line-height: 1.05 !important;
+  color: $noir !important;
+  // text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; // espace entre le texte et le trait
+    left: 0;
+    width: 1cm;
+    height: 3px; // épaisseur du trait
+    background-color: $cerema-bleu-moyen;
+  }
+}
+
+h2{
+font-size: 1.5rem !important;
+font-weight: 700 !important;
+letter-spacing: -.01em !important;
+line-height: 1.1 !important;
+color: $noir !important;
+}
+
+h3{
+font-size: 1.3rem !important;
+font-weight: 600 !important;
+line-height: 1.2 !important;
+color: $noir !important;
+}
+
+h4{
+font-size: 1.2rem !important;
+font-weight: 500 !important;
+line-height: 1.4 !important ;
+color: $noir !important;
+}
+
+p{
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h2#toc-title{
+  font-weight: 500 !important;
+  font-size: .9rem !important;
+  padding-left: 1rem;
+}
+
+.sidebar nav[role="doc-toc"] > ul a{
+  padding-left: 1rem;
+}
+
+.sidebar nav[role="doc-toc"] > ul li a  {
+  line-height: 1.1rem;
+  padding-bottom: .2rem;
+  padding-top: .425rem;
+  color: inherit;
+  font-weight: 500;
+  font-size: .875rem;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a {
+  padding-left: 1.8rem;
+  padding-top: .425rem;
+  font-size: .875rem;
+  font-weight: 400;
+  color: $gris-fonce;
+}
+
+// Légendes
+.quarto-figure{
+  margin-bottom: 0em !important;
+}
+
+figcaption{
+  font-family: $font-citation;
+  color: $cerema-bleu-moyen;
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
+// Element code
+code{
+  font-family: $font-citation !important;
+  font-weight: 700 !important;
+  font-size: 1.15rem !important;
+  background-color: $gris-clair !important;
+  color: $cerema-bleu;
+}
+
+// Citation
+.type-citation {
+  font-family: $font-citation;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: $cerema-orange;
+  max-width: 600px;
+}
+
+.type-body-sm { 
+  font-size: .875rem; 
+  font-weight: 400; 
+  line-height: 1.6; 
+  color: $cerema-bleu-moyen; 
+}
+
+/* === BREADCRUMB (fil d'ariane) === */
+
+//--------------------------------------------------------
+// ancienne version simple
+// .breadcrumb-item a{
+//   color: $cerema-bleu !important;
+//   font-weight: 600;
+// }
+
+// .breadcrumb-item :hover{
+//  color: $cerema-orange;
+// }
+
+// version reprise du design system
+.quarto-page-breadcrumbs{
+    margin-bottom: 2rem;
+}
+
+// Modification du > en /
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, "/");
+}
+
+.quarto-page-breadcrumbs .breadcrumb li {
+  font-size: .8rem !important;
+  color: $cerema-orange !important;
+}
+
+.quarto-page-breadcrumbs .breadcrumb a {
+  // color: $cerema-bleu-moyen !important;
+  color: #786E97 !important;
+  transition: color $transition-fast !important;
+}
+
+
+.quarto-page-breadcrumbs .breadcrumb-item:last-child a {
+  font-weight: 600 !important;
+  color: $cerema-bleu !important;
+}
+
+// .quarto-page-breadcrumbs .breadcrumb a:hover, .quarto-page-breadcrumbs .breadcrumb-item:last-child a:hover{  
+//   // color: $blanc !important;
+//   // background-color: $cerema-bleu !important;
+// }
+
+//-----------------------------------------------------------------------------------------------------------
+// Partials, Pour en-tête avec author reviewer etc... (fait par Thomas)
+//-----------------------------------------------------------------------------------------------------------
+
+.quarto-title-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quarto-title-meta-heading {
+    text-transform: uppercase;
+    margin-top: 1em;
+    font-size: .8em;
+    opacity: .8;
+    font-weight: 400;
+}
+
+.quarto-title-meta-contents {     /* gris foncé Flatly */
+    margin-bottom: 0.1em;
+    font-size: .9em;
+}
+
+.quarto-title-meta-contents, .quarto-title-meta-contents, .quarto-title-meta-contents {
+    display: block;
+}
+
+/* === BLOCKQUOTE (> en qmd) === */
+// reprise du lead de design system
+.blockquote{
+  border-left-color: $cerema-bleu-moyen;
+  font-size: 1.2rem; 
+  font-weight: 300; 
+  line-height: 1.7; 
+  color: $cerema-bleu !important;
+  background-color: $gris-clair;
+  box-shadow:
+  0 1px 0 rgba(255,255,255,.8) inset,
+  0 2px 10px rgba(41,37,116,.05);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.5rem;
+
+}
+
+/* === LIENS === */
+
+.nav-link{
+  color: $link-color;
+  text-decoration: none;
+}
+
+
+
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  text-decoration: underline !important;
+}
+
+/* === CALLOUT === */
+
+.callout{
+  color: $noir !important;
+}
+
+.callout-title-container{
+  //color: $noir;
+  font-size: 1.1rem ;
+  font-weight: 500 ;
+  line-height: 1.2 ;
+}
+
+//--
+// Callout basiques
+.callout.callout-style-default > div.callout-header {
+  padding-left: 1em;
+  padding-right: 0.25em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.callout.callout-style-default .callout-body {
+  padding: 1rem;
+}
+
+// Variantes titre personnalisé, apparance simple
+.callout.callout-style-simple {
+  padding: 1rem;
+}
+
+// Variante accordéon
+.callout.callout-style-default .callout-header {
+  padding-top: 1rem;
+}
+//--
+
+.callout-note{
+  border-left-color: $cerema-bleu !important;
+}
+
+.callout-note .callout-header{
+  background-color: $cerema-bleu-pale !important;
+}
+
+.callout-tip{
+  border-left-color: $domaine-e-fonce !important;
+}
+
+.callout-tip .callout-header{
+  background: $domaine-e-pale !important;
+}
+
+.callout-warning{
+  border-left-color: $domaine-b-fonce !important;
+}
+
+.callout-warning .callout-header{
+  background-color: $domaine-b-pale !important;
+}
+
+.callout-important {
+  border-left-color: $cerema-orange !important;
+}
+
+.callout-important .callout-header{
+  background-color: $background-error !important;
+}
+
+.callout-style-simple.callout-note{
+  background-color: $cerema-bleu-pale;
+}
+
+.callout-style-simple.callout-tip{
+  background-color: $domaine-e-pale;
+}
+
+.callout-style-simple.callout-warning{
+  background-color: $domaine-b-pale;
+}
+
+.callout-style-simple.callout-important{
+  background-color: $background-error;
+}
+
+.callout-caution{
+  //border-left-color: $domaine-c-fonce !important;
+  border-left-color: $cerema-orange !important;
+}
+
+.callout-caution .callout-header{
+  //background-color: $domaine-c-pale !important;
+  background-color: $background-error !important;
+}
+
+
+/* === ONGLETS === */
+// .nav{
+//  display: flex;
+//  gap: 0;
+//  list-style: none;
+// }
+
+// .nav-tabs {
+    // border-width: 0% !important;
+    // border-color: $cerema-orange !important;
+    // border-radius: 0.25rem !important;
+// }
+
+/* === PAGE PREVIOUS PAGE NEXT === */
+
+// version simple
+// .pagination-link{
+//   font-family: $font-primary;
+//   font-weight: 700;
+//   border: $gris-moyen solid 1px;
+//   padding: 10px 100px 10px 0;
+// }
+
+// .nav-page :hover{
+//   background-color: $gris-moyen;
+// }
+
+// .nav-page-text{
+//   color: $noir;
+// }
+
+.page-navigation {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  border-top: 1px solid $gris-moyen;
+}
+
+.page-navigation .pagination-link {
+  display: block;
+  padding: $space-md $space-lg;
+  border: 1px solid $gris-moyen;
+  border-radius: $radius-sm;
+  background: $blanc;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color $transition-fast,
+    background $transition-fast;
+}
+
+.page-navigation .pagination-link:hover {
+  color: $cerema-bleu;
+  border-color: $gris-moyen;
+  background: $gris-clair;
+  text-decoration: none !important;
+}
+
+.page-navigation .nav-page-next .pagination-link {
+  text-align: right;
+}
+
+// adaptation pour les div qui dépassent de la page
+.column-body-outset-right,
+.column-page-inset-right,
+.column-page-right,
+.column-screen-inset-right,
+.column-screen-right,
+.column-body-outset-left,
+.column-page-inset-left,
+.column-page-left,
+.column-screen-inset-left,
+.column-screen-left,
+.column-body-outset, 
+.column-page, 
+.column-screen{
+  background-color: $blanc;
+}
+
+/* === IMAGES === */
+img:not(.sidebar-logo){
+  border-radius: $radius-md;
+}
+/*-- images miniatures tronquée mais pas déformé--*/
+.miniature {
+    //width: 200 px;
+    //height: 450;
+    object-fit: cover;
+    object-position: center;
+    border-radius: $radius-lg !important;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 4px 8px $gris-clair;
+    transition: transform 0.2s ease;
+}
+
+.miniature:hover {
+  transform: translateY(-4px);
+}
+
+
+/* pour mettre une image dans un cercle avec un bord*/
+.circle {
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 5px solid $cerema-bleu; /* Bordure bleue de 5px */
+  /*padding: 3px;*/ /* Espace entre l'image et la bordure (optionnel) */
+  box-sizing: border-box; /* Pour inclure la bordure dans la taille totale */
+}
+
+
+/* === TABLEAUX === */
+.table_cerema thead tr {
+  background-color: $cerema-bleu;
+  color: $blanc;
+}
+
+// sur les petits écran ascenseur horizontal
+@media (max-width: 991.98px) {
+  .table_cerema {
+    display: block;
+    overflow-x: auto;
+    // white-space: nowrap; /* Empêche le retour à la ligne des cellules */
+  }
+}
+
+.dataTable {
+  font-size: 14px;
+  color: $cerema-bleu;
+}
+
+.dataTable thead tr {
+  background-color: $cerema-bleu;
+  color: $blanc;
+}
+
+
+
+/* === BIG VALUE BOXES MAISON=== */
+/* Style général d’une BIG value box */
+.value-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: $blanc;
+  // margin-bottom: 1rem;
+  min-height: auto !important;
+  box-shadow: 0 4px 8px $gris-clair;
+  transition: transform 0.2s ease;
+}
+
+.value-box:hover {
+  transform: translateY(-4px);
+}
+
+
+.value-box .icon, .value-box .icon p {
+  font-size: 5rem !important;   /* 👈 taille agrandie */
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.value-box .title, .value-box .title p {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  // opacity: 0.9;
+}
+
+.value-box .value, .value-box .value p {
+  font-size: 2.5rem !important;
+  font-weight: bold;
+  margin: 0.2rem 0;
+}
+
+.value-box .details, .value-box .details p {
+  font-size: 1rem !important;
+  // opacity: 0.9;
+  line-height: 1.3;
+}
+
+/* === MINI VALUE BOXES MAISON=== */
+/* Style général d’une MINI value box */
+.mini-value-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0px;
+  margin-bottom: 1rem;
+  color: $blanc;
+  min-height: auto !important;
+  box-shadow: 0 4px 8px $gris-clair;
+  transition: transform 0.2s ease;
+}
+.mini-value-box:hover {
+  transform: translateY(-4px);
+}
+
+.mini-value-box .icon-value, .mini-value-box .icon-value p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espace entre l'icône et la valeur */
+}
+
+.mini-value-box .icon, .mini-value-box .icon p {
+  font-size: 2rem !important;   /* 👈 taille agrandie */
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+
+.mini-value-box .value, .mini-value-box .value p {
+  font-size: 2rem !important;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.mini-value-box .details, .mini-value-box .details p {
+  font-size: 0.9rem !important;
+  // opacity: 0.9;
+  line-height: 1.1;
+}
+
+/* Classes réutilisables pour les value box et ailleurs si on veut...*/
+
+.bg-orangeCerema { background-color: $cerema-orange; }
+.bg-bleuCerema { background-color: $cerema-bleu; }
+.bg-bleuExpertise { background-color: $domaine-a-fonce; }
+.bg-jauneBatiment { background-color: $domaine-b-fonce; color: $noir !important; }
+.bg-orangeMobilite { background-color: $domaine-c-fonce; }
+.bg-vertInfra { background-color: $domaine-d-fonce; }
+.bg-vertEnvironnementRisques { background-color: $domaine-e-fonce;}
+.bg-bleuMerLittoral { background-color: $domaine-f-fonce; }
+.bg-blanc { background-color: $blanc; color: $noir !important; }
+.bg-gris-clair { background-color: $gris-clair; color: $noir !important; }
+
+/* === Surlignage === */
+
+
+// surlignage en bleu
+mark {
+  margin: 0 0em;
+  padding: 0.3em 0.3em;
+  border-radius: 0.3em 0.3em;
+  background: $cerema-bleu-clair;
+}
+
+
+/* === IMAGE AVEC TEXTE FACON PAGE DE GARDE === */
+.study-header {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  /*background-image: url('images/illustration_exemple.png');*/
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $blanc;
+  text-align: center;
+  border-radius: 5px; /* Arrondi les 4 coins */
+  margin-bottom: 20px;
+}
+
+.study-header-content {
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+}
+
+.study-header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: $cerema-bleu;
+  text-align: center;
+}
+
+.study-header h2 {
+  font-size: 2.5em;
+  margin-top: 15px !important;
+  margin-bottom: 5px !important;
+  color: $cerema-bleu;
+  text-align: center;
+}
+
+.study-header h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  /*color:white;*/
+  color: $cerema-bleu;
+  text-align: center;
+}
+
+.study-header p {
+  font-size: 1.5em;
+  /*color:white;*/  
+  color: $cerema-bleu;
+  text-align: center;
+}
+
+/* =========================================================
+   TABSET QUARTO
+========================================================= */
+
+.panel-tabset .nav-tabs {
+  // display: flex;
+  // gap: 0;
+
+  border-bottom: 2px solid $cerema-bleu-pale;
+  // margin-bottom: $space-xl;
+
+  list-style: none;
+}
+
+.panel-tabset .nav-tabs .nav-link {
+  display: block;
+
+  // padding: $space-md $space-lg;
+
+  font-size: .875rem;
+  font-weight: 600;
+
+  color: $cerema-bleu-moyen;
+  text-decoration: none;
+
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+
+  // margin-bottom: -2px;
+
+  transition: all $transition-fast;
+}
+
+.panel-tabset .nav-tabs .nav-link:hover {
+  color: $cerema-bleu;
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  color: $cerema-bleu;
+  border-bottom-color: $cerema-orange;
+}
+
+
+/* =========================================================
+   OBSERVABLE INPUT
+========================================================= */
+  /* Cible les labels des inputs Observable (toggle, radio, etc.) */
+  // .observablehq .oi-form label,
+  // .observablehq form label {
+  //   max-width: 350px !important; /* Ajuste cette valeur selon tes besoins */
+  //   width: auto !important;
+  //   white-space: normal !important; /* Permet le retour à la ligne */
+  //   word-wrap: break-word !important; /* Casse les mots longs si nécessaire */
+  //   display: inline-block !important;
+  // }
+
+  // /* Optionnel : Ajuste l'alignement et la marge */
+  // .observablehq .oi-form {
+  //   width: 100% !important;
+  // }
+
+/* ============================================================
+   FORMULAIRES OJS
+   ============================================================ */
+
+.observablehq {
+
+  // --- Conteneur form ---
+  form {
+    margin-bottom: $space-lg;
+    font-family: $font-primary;
+  }
+
+  // --- Label principal (enfant direct du form) ---
+  form > label {
+    display: block;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: $cerema-bleu;
+    margin-bottom: $space-sm;
+  }
+
+  // --- Inputs texte, number, search, date, datetime-local ---
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="search"],
+  form input[type="date"],
+  form input[type="datetime-local"],
+  form input[type="file"] {
+    width: 100%;
+    padding: 10px 16px;
+    font-family: $font-primary;
+    font-size: .9375rem;
+    color: $cerema-bleu;
+    background: $blanc;
+    border: 2px solid $cerema-bleu-pale;
+    border-radius: $radius-md;
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $cerema-bleu;
+      box-shadow: 0 0 0 3px rgba(41, 37, 116, .1);
+    }
+
+    &::placeholder {
+      color: $cerema-bleu-moyen;
+      opacity: .7;
+    }
+  }
+
+  // --- Textarea ---
+  form textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    padding: 10px 16px;
+    font-family: $font-primary;
+    font-size: .9375rem;
+    color: $cerema-bleu;
+    background: $blanc;
+    border: 2px solid $cerema-bleu-pale;
+    border-radius: $radius-md;
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $cerema-bleu;
+      box-shadow: 0 0 0 3px rgba(41, 37, 116, .1);
+    }
+
+    &::placeholder {
+      color: $cerema-bleu-moyen;
+      opacity: .7;
+    }
+  }
+
+  // --- Select ---
+  form select {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    font-family: $font-primary;
+    font-size: .9375rem;
+    color: $cerema-bleu;
+    background-color: $blanc;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 7L11 1' stroke='%23292574' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    border: 2px solid $cerema-bleu-pale;
+    border-radius: $radius-md;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $cerema-bleu;
+      box-shadow: 0 0 0 3px rgba(41, 37, 116, .1);
+    }
+  }
+
+  // --- Range (slider) ---
+  form input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: $cerema-bleu-pale;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: $cerema-orange;
+      border: 2px solid $blanc;
+      box-shadow: $shadow-sm;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: $cerema-orange;
+      border: 2px solid $blanc;
+      box-shadow: $shadow-sm;
+      cursor: pointer;
+    }
+  }
+
+  // --- Checkbox & Radio ---
+  // Les labels enfants du div wrapper dans les forms de type checkbox/radio
+  form div > label {
+    // display: flex;
+    // align-items: flex-start;
+    gap: $space-sm;
+    cursor: pointer;
+    font-size: .9375rem;
+    color: $cerema-bleu;
+    line-height: 1.5;
+    margin-bottom: .35rem;
+  }
+
+  form input[type="checkbox"],
+  form input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    // flex-shrink: 0;
+    margin-top: 2px;
+    border: 2px solid $cerema-bleu-pale;
+    border-radius: 4px;
+    background: $blanc;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: background $transition-fast, border-color $transition-fast;
+    position: relative;
+
+    &:checked {
+      background: $cerema-orange;
+      border-color: $cerema-orange;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        width: 5px;
+        height: 9px;
+        border: 2px solid $blanc;
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  form input[type="radio"] {
+    border-radius: 50%;
+
+    &:checked::after {
+      width: 8px;
+      height: 8px;
+      border: none;
+      background: $blanc;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+      transform: none;
+    }
+  }
+
+  // --- Toggle ---
+  // OHQ génère : <form class="...-toggle"><label/><input type="checkbox" class="...-input"/></form>
+  // On cible l'input checkbox qui porte une classe contenant "-input" dans un form "-toggle"
+  form[class*="-toggle"] input[type="checkbox"] {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: $cerema-bleu-pale;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 0;
+    transition: background $transition-normal;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: $blanc;
+      box-shadow: $shadow-sm;
+      transition: transform $transition-normal;
+    }
+
+    &:checked {
+      background: $cerema-orange;
+
+      &::after {
+        transform: translateX(20px);
+      }
+    }
+  }
+
+  // --- Boutons ---
+  form button {
+    padding: 9px 9px;
+    font-family: $font-primary;
+    font-size: .9375rem;
+    font-weight: 700;
+    color: $blanc;
+    background: $cerema-bleu;
+    border: 2px solid $cerema-bleu;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: background $transition-fast, border-color $transition-fast;
+    margin-right: .5rem;
+
+    &:hover {
+      background: $cerema-orange;
+      border-color: $cerema-orange;
+    }
+  }
+
+  // --- Tableau (Inputs.table) ---
+
+  form[class*="-table"] {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      color: $cerema-bleu;
+    }
+
+    thead tr {
+      background-color: $cerema-bleu;
+      color: $blanc;
+    }
+
+    // Cible aussi les th individuellement, souvent là que la couleur est posée
+    thead th,
+    thead th span {
+      z-index: 2;
+      background-color: $cerema-bleu;
+      color: $blanc;
+    }
+
+    th {
+      white-space: normal;
+      word-break: break-word;
+      font-size: .825rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: $cerema-bleu;
+      // padding: 8px 12px;
+      // text-align: left;
+    }
+
+    thead th:has(input[type="checkbox"]),
+    tbody td:has(input[type="checkbox"]) {
+      width: 40px;
+      min-width: 40px;
+      padding: 7px 8px;
+      overflow: visible;
+    }
+
+    td {
+      white-space: normal;
+      word-break: break-word;
+      // padding: 7px 12px;
+      border-bottom: 1px solid $cerema-bleu-pale;
+      font-size: .825rem;
+      font-weight: 500;
+    }
+
+    tbody tr:hover {
+      background: rgba(41, 37, 116, .04);
+    }
+
+    // Checkbox de sélection dans le tableau — écrase le style général ci-dessus
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      margin-top: 0;
+
+      &:checked::after {
+        top: 1px;
+        left: 3px;
+        width: 4px;
+        height: 8px;
+      }
+    }
+
+  }
+
+
+}
+
+/* =========================================================
+   OBSERVABLE PLOT
+========================================================= */
+/* Cible tous les éléments dont la classe contient "plot" ET "swatches" */
+[class*="plot"][class*="swatches"] {
+  margin-left: $space-md !important;
+  font-family: $font-primary; 
+  font-size: 14px; /* Taille ajustable */
+  color: $cerema-bleu; 
+  font-weight: 500; 
+}
+
+/* Cible spécifiquement les conteneurs de swatches (ex: plot-XXX-swatches-wrap) */
+// [class*="plot"][class*="swatches-wrap"] {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 8px; /* Espacement entre les éléments */
+//   margin-bottom: 12px;
+// }
+
+/* Cible les labels des swatches (ex: plot-XXX-swatch > text) */
+// [class*="plot"][class*="swatch"] {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 6px; /* Espacement entre le carré de couleur et le texte */
+// }
+
+/* Cible les textes à l'intérieur des swatches */
+// [class*="plot"][class*="swatch"] text {
+//   fill: #292574; /* Couleur du texte dans les SVG */
+//   font-size: 11px;
+// }
+
+[class*="plot"][class*="swatch"] svg {
+  border-radius: $radius-sm;
+  overflow: hidden;
+}
+
+/* Cible les axes et labels du graphique (plot-XXX) */
+[class*="plot"] text {
+  font-family: $font-primary; /* Exemple : police moderne */
+  font-size: 12px; /* Taille ajustable */
+  color: $cerema-bleu; /* Couleur Cerema bleu (exemple) */
+  font-weight: 500; /* Épaisseur du texte */
+}
+
+/* Cible les titres du graphique */
+[class*="plot"] h2 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: $cerema-bleu !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0px !important;
+  margin-bottom: $space-sm !important;
+  margin-left: $space-xl !important;
+  text-align: left !important;
+}
+
+[class*="plot"] h3 {
+  font-family: $font-primary !important;
+  color: $cerema-bleu-moyen !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  margin-left: $space-xl !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  text-align: left !important;
+}
+
+[class*="plot"] figcaption {
+  text-align: right;
+}
+
+//-----------------------------------------------------------------------------------------------------------
+// Bibliographie
+//-----------------------------------------------------------------------------------------------------------
+
+#refs a {
+  overflow-wrap: anywhere;  /* Retour à la ligne n'importe où dans l'URL */
+  word-break: break-word;   /* Alternative pour les anciens navigateurs */
+}
+
+//-----------------------------------------------------------------------------------------------------------
+// FOOTER
+//-----------------------------------------------------------------------------------------------------------
+.quarto-footer {
+
+  p, a {
+    color: $gris-fonce;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  // ← seul ajout nécessaire
+    // gap: 1rem;
+  }
+
+  .footer-row--top {
+    padding: 0.75rem;    
+    border-top: 1px solid $gris-moyen;
+    border-bottom: 1px solid $gris-clair;
+  }
+
+  .footer-row--bottom {
+    padding: 0.75rem;
+  }
+
+  .footer-logo {
+    max-height: 60px;
+    width: fit-content;
+    border-radius: 0;
+  }
+
+  .footer-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+  }
+
+  .footer-editor,
+  .footer-copy {
+    font-size: 0.825rem;
+    margin: 0;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.825rem;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+}
+
+
+//-----------------------------------------------------------------------------------------------------------
+// GESTION DES IMPRESSIONS DU NAVIGATEUR
+//-----------------------------------------------------------------------------------------------------------
+
+/* === Sidebar et Tableaux === */
+@media print {
+  #quarto-sidebar {
+    display: none !important;
+  }
+  
+  table.table_cerema {
+    page-break-inside: avoid;   /* évite que la table soit coupée */
+    border-collapse: collapse;  /* pour un rendu propre */
+    width: 100%;
+  }
+  
+  table.table_cerema tr,
+  table.table_cerema td,
+  table.table_cerema th {
+    page-break-inside: avoid;   /* évite que les lignes/cellules soient coupées */
+    page-break-after: auto;
+  }
+
+  /* répéter l'en-tête à chaque page comme dans Word */
+  table.table_cerema thead {
+    display: table-header-group;
+  }
+  table.table_cerema tfoot {
+    display: table-footer-group; /* optionnel si tu veux un pied de page */
+  }
+}
+
+/* === Gallerie d'images === */
+@media print {
+  /* Forcer la grille sur 4 colonnes en A4 portrait */
+  .g-col-12.g-col-md-6.g-col-lg-4.g-col-xl-3 {
+    grid-column: span 3 !important; /* équivalent col-xl-3 = 1/4 de ligne */
+  }
+
+  .g-col-12.g-col-md-6.g-col-xl-6{
+    grid-column: span 6 !important; 
+  }
+  
+  /* pour mes mini value box cas 1 */
+  .g-col-12.g-col-md-6.g-col-lg-8.g-col-xl-9{
+    grid-column: span 9 !important; 
+  }
+  
+  /* pour mes mini value box cas 2*/
+  .g-col-12.g-col-md-6.g-col-lg-4.g-col-xl-3{
+    grid-column: span 3 !important; 
+  }
+
+  .g-col-12 .g-col-md-6 .g-col-lg-4 .g-col-xl-6{
+    grid-column: span 6 !important; 
+  }
+
+  .g-col-12.g-col-md-6.g-col-lg-4.g-col-xl-4{
+    grid-column: span 4 !important; 
+  }
+
+  [class*="g-col-"] {
+    margin: 0 0 1rem 0 !important;
+    padding: 0.5rem !important;
+    page-break-inside: avoid !important;
+  }
+
+}
+
+/* === Onglets === */
+@media print {
+    /* option : masquer la barre d'onglets elle-même (déco) ;
+        si tu préfères garder les titres, commente ces lignes */
+    .panel-tabset .nav-tabs,
+    .tabset .nav-tabs,
+    .nav-tabs {
+        display: none !important;
+    }
+}
+
+/* ──  ajout encadré ── */
+.encadre {
+  border: 1px solid #262069;
+  padding: 10px;
+  border-radius: 0 px;
+}
+

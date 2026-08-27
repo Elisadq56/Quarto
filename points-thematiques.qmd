@@ -1,0 +1,34 @@
+---
+title: "Plans d'actions"
+subtitle: "... tableau, carte, graphe, inline code"
+lang: fr # pratiques, qqs trucs seront traduits automatiquement
+author: Carine Flahaut
+reviewer: Marinon Valentin
+date: 2026-03-24
+#date-modified: 2026-03-24
+toc: true  # toc of content = table des matières
+toc-depth: 3 # jusqu'à quel niveau de titre on veut bien aller
+lightbox: true # gestion des images en gallerie pour les agrandir quand on clique
+execute: 
+  warning: false
+  echo: false
+format:
+  html:
+    code-tools: true
+---
+
+## Point sur le stationnement
+
+## Point sur les arrêts TC
+
+## Point sur les parkings de covoiturage
+
+## Connexions avec communes alentour (liaisons vers Zones d’Activités)
+
+## Compatibilité des aménagements proposés avec les études réalisées sur le territoire de NLA
+
+## Les stationnements vélos
+
+## Services vélos
+
+## Communication – sensibilisation

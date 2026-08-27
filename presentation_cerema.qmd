@@ -1,0 +1,39 @@
+---
+title: "le CEREMA"
+image: "images/logo/logo_cerema_br.jpg"
+# date: 2024-09-11
+lang: fr
+about:
+  template: trestles
+  image: "images/logo/logo_cerema.PNG"
+  links:
+    - icon: link
+      href: https://www.cerema.fr/fr
+    - icon: linkedin
+      href: https://fr.linkedin.com/company/cerema
+    - icon: twitter-x 
+      href: https://x.com/ceremacom
+    - icon: youtube
+      href: https://www.youtube.com/@cerema3139
+---
+
+<!-- ![](images/logo/logo_cerema.PNG){fig-align="center" width="158"} -->
+
+Le [Cerema](https://www.cerema.fr/), établissement public relevant du ministère du Partenariat avec les territoires et de la Décentralisation, du ministère de la Transition écologique, de l’Énergie, du Climat et de la Prévention des risques et du ministère du Logement et de la Rénovation urbaine, accompagne l’État et les collectivités territoriales pour l’élaboration, le déploiement et l’évaluation de politiques publiques d’aménagement et de transport.Implanté au cœur des territoires, le Cerema bénéficie d’une connaissance historique des problématiques et contextes locaux.  
+
+Cette proximité lui permet de proposer des solutions sur mesure aux acteurs des territoires et de mettre à leur disposition des interlocuteurs concernés, engagés et disponibles.
+
+Les métiers du Cerema s'organisent autour de 6 domaines d'action complémentaires visant à accompagner les acteurs territoriaux dans la réalisation de leurs projets :
+
+-   Expertise et ingénierie territoriale
+-   Bâtiment
+-   Mobilités
+-   Infrastructures de transport
+-   Environnement et risques
+-   Mer et littoral
+
+Le Cerema est aujourd’hui l’expert public de l’adaptation au changement climatique. Il développe au quotidien des savoirs scientifiques et aide à déployer des solutions techniques pour sécuriser et améliorer le cadre de vie des citoyens.
+
+Au sein de la direction territoriale Normandie-Centre, le groupe Ville Urbanisme Usage Bâtiment intervient à l’échelle fine de la ville, du quartier et du bâtiment, avec des approches orientées autour de l’usager, en développant l’aménagement à ces échelles, la conception d’un espace public adapté et inclusif, l’optimisation des performances énergétiques et environnementales des bâtiments, la gestion de patrimoine immobilier, les solutions d’adaptation au changement climatique, au travers notamment des solutions fondées sur la nature.
+
+Dans le cadre de ces missions et pour apporter une réponse aux enjeux normands, le Cerema a développé une expertise sur l’urbanisme et le bâti de la Reconstruction afin de pouvoir accompagner les collectivités concernées de manière transversale.

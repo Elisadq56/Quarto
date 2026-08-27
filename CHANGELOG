@@ -1,0 +1,50 @@
+# Changelog
+
+## [2.0.0] - 2026-06-07
+
+### Modifié
+- Relooking complet selon charte graphique. Retrocompatible à 99% pour la partie markdown / css.
+- Mise à jour du README.qmd
+
+### Ajouté
+- Deux fichiers javascript pour améliorer les navbar (active sur les sous menus, clone brand pour le mode book mobile)
+
+## [1.1.1] - 2026-01-29
+
+### Ajouté
+- Intégration de l'extension pour intégrer des pdf et exemple dans la page de rapport
+- CSS et exemple pour surligner aux couleurs du cerema
+
+
+## [1.1.0] - 2025-11-28
+
+### Ajouté
+- Page exemple de data
+- 3 configurations de yaml différentes : book, navbar, sidebar
+- Class .study-header pour une image façon page de garde de rapport
+- Classes .value-box et .mini-value-box pour des chiffres clef, cf exemple page rapport
+- Classe .circle pour des images rondes entouré de bleu
+- Ajout d'un bouton code sur les pages exemples pour pouvoir accéder au code sans ouvrir le .qmd (attention il faudra mettre code false pour les pages en production)
+- Ajout d'un exemple mermaid un peu complexe (à voir si on garde cf prb firefox sous evreux)
+
+### Modifié
+- Couleur des liens en orange
+
+## [1.0.0] - 2025-09-24
+
+### Ajouté
+- Page exemple de rapport
+- Page exemple de bibliographie
+- Page exemple de glossaire
+- Page d'accueil avec intégration des éléments des rapports papier
+- Script pour dérouler les collapse et transformer les tabsets en titre simple pour que tout s'imprime
+
+### Modifié
+- css @mediaprint
+- Amélioration des performances du backend.
+
+### Corrigé
+- css des galleries d'images
+
+### Supprimé
+- css de maplibre

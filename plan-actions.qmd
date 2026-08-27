@@ -1,0 +1,125 @@
+---
+title: "Plans d'actions"
+subtitle: "Plans d'actions de référence"
+lang: fr # pratiques, qqs trucs seront traduits automatiquement
+author: Carine Flahaut
+reviewer: Marinon Valentin
+date: 2026-03-24
+#date-modified: 2026-03-24
+toc: true  # toc of content = table des matières
+toc-depth: 3 # jusqu'à quel niveau de titre on veut bien aller
+lightbox: true # gestion des images en gallerie pour les agrandir quand on clique
+execute: 
+  warning: false
+  echo: false
+format:
+  html:
+    code-tools: true
+---
+
+## Actions à mener pour mise en œuvre et complément des études réalisées sur la commune
+
+### [Réflexions :]{.underline}
+
+Réflexion globale sur la hiérarchisation des voies : quels sont les axes pouvant être utilisés par le trafic de transit ? Quelles sont les voies permettant de relier les bourgs entre eux ? quelles sont les voies à trafic interne à chaque bourg ?
+
+Réflexion globale sur le plan de circulation : quels équipements / services / zone d’habitat nécessitent de limiter la circulation ? Définir comment aménager les voies pour décourager le transit ou l’orienter vers les itinéraires dédiés ? (inversement sens circulation - sens uniques - têtes bêches - impasses ...)
+
+Réflexion globale sur la modération des vitesses en fonction du plan de hiérarchisation des voies et du plan des zones de circulation apaisé : déterminer quelles limites de vitesses dans quelles zones ou rues, comment la mettre en place Agglomération à 30, extension des zones 30, limitations à 30)
+
+> **Finalités** :
+>
+> -   Réalisation d’un **plan de hiérarchisation des voies**
+>
+> -   Réalisation d’un **plan de circulation**
+>
+> -   Réalisation d’un **plan de modération des vitesses**\
+
+**Ces 3 plans permettront d’avoir une vision globale des aménagements à l’échelle de l’agglomération, permettant de bien positionner les Zones de Circulation Apaisée et d’assurer une cohérence des différents aménagements.**
+
+### [Contraintes / objectifs]{.underline}
+
+**S’assurer que les déplacements du quotidien au sein de chaque bourg sont réalisables à vélo :** <br>Définir un niveau de confort et surtout de sécurité par section ou itinéraire et penser aux stationnements vélos
+
+**S’assurer que les déplacements du quotidien au sein de chaque bourg sont réalisables à pied :** <br>Définir un niveau de confort et surtout de sécurité par section ou itinéraire et penser à l’implantation de zones de repos
+
+**S’assurer qu’il existe un/des itinéraires vélos et piétons entre les centralités (armature)** <br>Vérifier la compatibilité des itinéraires avec les grandes orientations du SDC du bocage Bressuirais (projets véloroutes et liaisons intercommunales)
+
+> **Finalités :**
+>
+> -   Réalisation d’un plan des itinéraires cyclables
+>
+> -   Réalisation d’un plan des cheminements piétons
+
+**Ces plans permettront de s’assurer de la cohérence des itinéraires et cheminements, de leur continuité, du confort et de la sécurité qu’ils offrent**
+
+S’assurer que les itinéraires vélos et piétons sont bien indiqués : qu’indique t-on ? Avec quel type de panneau ? (réglementaire, libre)
+
+> **Finalités :**
+>
+> -   Réalisation d’un plan de jalonnement piéton
+>
+> -   Réalisation d’un plan de jalonnement cyclable
+
+### [**Autres actions :**]{.underline}
+
+S’assurer de la qualité des stationnements vélos
+
+> **Finalités :** Recommandations
+
+Les services vélos pouvant être développés : réparation - locations - prêts
+
+> **Finalités** : Recommandations
+
+S’assurer que les habitants sont bien informés de l’existence des itinéraires vélos et piétons - Sensibilisation des usagers envers les populations les plus vulnérables Favoriser l’usage du vélo dans les déplacements du quotidien : formation des enfants, remise en selle, s’assurer de lieux de réparation, de stationnement sécurisé, etc.. .
+
+> **Finalités :** plan de communication et plan d’action en faveur des modes actifs
+
+## Le plan de hiérarchisation des voies
+
+::::::: columns
+:::: {.column width="49%"}
+::: encadre
+**Définition d’un plan de hiérarchisation des voies**
+
+Un plan de hiérarchisation des voies est un document de planification qui classe l’ensemble des rues et routes d’un territoire en plusieurs catégories, selon leur rôle principal (transit, distribution, desserte locale, etc.)
+
+**Son utilité** :
+
+-   Définit pour chaque type de voie une fonction prioritaire
+
+-   Organise un réseau lisible et cohérent, afin de guider les choix d’aménagement (largeur, trottoirs, pistes cyclables, stationnement, signalisation).
+
+-   Contribue à la sécurité routière et à la modération des vitesses, en adaptant le trafic au type de rue (zones 30, zones de rencontre, etc.).
+:::
+::::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="47%"}
+**Méthode de travail :**
+
+Le plan de hiérarchisation des voies de NLA a été réalisé sur la base des plans de classification des voies fournis par le département en particulier pour les voies principales d’un travail réalisé dans le cadre d’un atelier auquel élus et techniciens ont participé en particulier pour les voies internes
+
+**Son contenu :**
+
+Le plan de hiérarchisation des voies de NLA permet d’identifier les voies de transit dites principales (entre 6000 et 2000 véh/j) les voies internes dites secondaires (moins de 2000 véh/j) les autres voies sont des voies de dessertes moins circulées les itinéraires obligatoires ou nécessaires pour les PL sont également indiqués, leur présence ayant un impact sur la sécurité des modes actifs, en particulier les cyclistes.
+:::
+:::::::
+
+## Le plan de circulation
+
+## Le plan de modération des vitesses
+
+## Analyse et traitement des entrées des Zones 30
+
+## Le plan vélo
+
+## Le plan piéton
+
+## Autres plans de références
+
+## Superposition des plans piéton et vélo
+
+::::::

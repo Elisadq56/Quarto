@@ -1,0 +1,18 @@
+---
+title: "Bibliographie"
+lang: fr
+author : "Prénom Nom"
+date : 2025-07-04
+bibliography: bibliographie/biblio_zotero.bib
+nocite: '@*'
+---
+
+<!-- 
+Pour mettre à jour la biblio :
+Dans zotero : fichier / exporter la bibliothèque / format bibtex
+Sauvegarder dans le dossier bibliographie en écrasant Barentin_verte_permeable.bib
+Cette page met en forme automatiquement la biblio grace aux qqs mots clefs dans l'en tête yaml
+-->
+
+<!-- le @ doit être suivi de l'identifiant de la bibliographie qu'on peut voir dans le fichier .bib qui s'ouvre dans R studio -->
+<!-- Syntaxe pour les citations, comme précisé dans [@gradel_methode_2024, pp12-14] blablabla. -->
