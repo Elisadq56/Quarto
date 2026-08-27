@@ -17,20 +17,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
 
-      - name: Restore R packages
-        uses: r-lib/actions/setup-renv@v2
-        
+      - name: Install R packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            sf
+            leaflet
+            leaflet.extras2
+            dplyr
+            lwgeom
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       - name: Render
         run: quarto render
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,11 +44,16 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
