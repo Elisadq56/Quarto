@@ -304,7 +304,7 @@ Analyse des itinéaires : **Rue des sources**
 -   Circulation bus scolaire dans un sens
 
 ::: {style="text-align:center;"}
-![Propositions d'adaptations](images/cn1.png "texte infobulle"){fig-align="center" loading="lazy" width="350"}
+![Propositions d'adaptations](images/cn1.png "texte infobulle"){fig-align="center" loading="lazy" width="700"}
 :::
 
 Quelques adaptations peuvent être mises en place afin de rendre la traversée de la rue plus lisible et marquer la place des cyclistes sur la chaussée.
@@ -312,7 +312,7 @@ Quelques adaptations peuvent être mises en place afin de rendre la traversée d
 Le marquage d’ellipses 30 permettront de rappeler aux usagers qu’ils traversent une zone 30.
 
 ::: {style="text-align:center;"}
-![Rue en sens unique](images/cn1-2.png "texte infobulle"){fig-align="center" loading="lazy" width="350"}
+![Rue en sens unique](images/cn1-2.png "texte infobulle"){loading="lazy" fig-align="center" width="500"}
 :::
 
 Afin de donner plus de place aux cyclistes, une réflexion pourrait être menée pour mettre en sens unique cette rue, ainsi que les rues St Joseph et des Jardiniers. Afin de diminuer la largeur de la chaussée, le double-sens cyclable pourra être matérialisé par un marquage séparatif ou par la création d’un piste cyclable dans les secteurs les plus larges.
