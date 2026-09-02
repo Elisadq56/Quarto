@@ -14,7 +14,7 @@ execute:
   echo: false
 format:
   html:
-    code-tools: true
+    code-tools: false
 ---
 
 ```{r}

@@ -14,7 +14,7 @@ execute:
   echo: false
 format:
   html:
-    code-tools: true
+    code-tools: false
 ---
 
 ## Actions à mener pour mise en œuvre et complément des études réalisées sur la commune
