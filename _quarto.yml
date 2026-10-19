@@ -78,7 +78,7 @@ website:
 format:
   html:
     html-math-method: katex
-    theme: [default, custom.scss]
+    theme: [default, _modules/galerie_cartes.scss, custom.scss]
     grid:
       #sidebar-width: 350px
       body-width: 950px

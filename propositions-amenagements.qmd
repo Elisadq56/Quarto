@@ -1,6 +1,6 @@
 ---
 title: "Propositions d'aménagements"
-subtitle: "Propositions d’aménagements pour favoriser le développement des modes actifs, slide 63"
+subtitle: "Propositions d’aménagements pour favoriser le développement des modes actifs"
 lang: fr # pratiques, qqs trucs seront traduits automatiquement
 author: Carine Flahaut
 reviewer: Marion Valentin
@@ -293,7 +293,10 @@ carte
 
 ### Secteur 1 {#sec-numero-N1}
 
-Analyse des itinéaires : **Rue des sources**
+::: {.carte-bloc .carte-bloc-accent}
+[Analyse des itinéaires]{.carte-bloc-titre} 
+**Rue des sources**
+:::
 
 **Caractéristiques :**
 
@@ -376,6 +379,67 @@ Le double-sens cyclable pourra être matérialisé par une piste cyclable unidir
 
 ### Secteur 1 {#sec-numero-V1}
 
+::: {.carte-bloc .carte-bloc-accent}
+[Analyse des itinéaires]{.carte-bloc-titre} 
+**Rue des Genêts / Chemin du Lineau**
+:::
+
+::::::: {.columns style="align-items: center;"}
+:::: {.column width="25%"}
+> **Aménagements de la traversée** : Permet la jonction entre les rues résidentielles allant jusqu’à l’allée de Caphar vers la voie verte
+::::
+
+:::: {.column width="8%"}
+::::
+
+:::: {.column width="67%"}
+::: {style="text-align:center; margin-top: 1rem;"}
+![](images/cv1-1.png "texte infobulle"){fig-align="center" loading="lazy" width="100%"}
+:::
+::::
+:::::::
+
+Pour sécuriser la traversée de l’avenue St Hubert entre la rue des Genêts et le chemin du Lineau, la réalisation d’un plateau permettant de marquer l’entrée de la Zone 30 (vu dans le [plan de modération](plan-actions.qmd#plan_moderation)) au niveau du chemin du Lineau peut suffire à sécuriser la traversée. Ce dernier pourrait être prolongé au-delà de la rue des Genêts comme proposé sur la proposition d’aménagement de l’entrée en Zone 30.
+
+::::::: columns
+:::: {.column width="48%"}
+::: {style="text-align:center;"}
+![](images/cv1-2.png "texte infobulle"){fig-align="center" loading="lazy" width="100%"}
+:::
+::::
+
+:::: {.column width="4%"}
+::::
+
+:::: {.column width="48%"}
+::: {style="text-align:center;"}
+![](images/cv1-3.png "texte infobulle"){fig-align="center" loading="lazy" width="100%"}
+:::
+::::
+:::::::
+
+<br>
+Point de vigilance à corriger : décalage des panneaux d’E/S de la Zone 30 actuelle
+
+:::::::: columns
+:::: {.column width="48%"}
+::: {style="text-align:center;"}
+![](images/cv1-4.png "texte infobulle"){fig-align="center" loading="lazy" width="100%"}
+:::
+::::
+
+::: {.column width="4%"}
+:::
+
+:::: {.column width="48%"}
+::: {style="text-align:center;"}
+![](images/cv1-5.png "texte infobulle"){fig-align="center" loading="lazy" width="100%"}
+:::
+::::
+::::::::
+<br>
+Cette jonction pourrait également permettre une liaison future entre deux secteurs résidentiels – le secteur du Lineau étant identifié au PLUi comme une réserve foncière qui permettra à l’avenir un développement urbain entre le Centre-Ville et la Centralité Nord. La présence de la voie verte qui longe les étangs sera un atout pour faciliter l’accès des futurs habitants à ces deux centralités.
+
 ### Secteur 2 {#sec-numero-V2}
 
 ### Secteur 3 {#sec-numero-V3}
@@ -433,3 +497,4 @@ Le double-sens cyclable pourra être matérialisé par une piste cyclable unidir
 ## Programmation et premiers éléments de chiffrage
 
 ## Aides financières
+

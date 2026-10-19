@@ -1,0 +1,211 @@
+// ============================================================================
+// Style de la galerie de cartes (module réutilisable, voir galerie_cartes.py)
+// Couvre les deux usages : cartes complètes (.carte-galerie), et vignettes
+// d'un listing Quarto (.quarto-grid-item) menant à des pages de détail
+// (.fiche-detail).
+//
+// À ajouter au thème dans _quarto.yml, par exemple :
+//     theme: [default, _modules/galerie_cartes.scss, custom.scss]
+//
+// Personnalisation : dans la section « scss:defaults » de votre propre
+// fichier .scss, définissez les variables ci-dessous, par exemple :
+//     $galerie-accent: #EF7757;
+// Sans personnalisation, la couleur principale du thème ($primary) est utilisée.
+// ============================================================================
+
+/*-- scss:defaults --*/
+
+$galerie-accent: null !default;        // pastilles, liseré, encadré mis en avant
+$galerie-fond-accent: null !default;   // fond des pastilles et de l'encadré (sinon : accent très clair)
+$galerie-rayon: 12px !default;         // arrondi des cartes
+$galerie-ombre: 0 2px 12px rgba(0, 0, 0, .07) !default;
+
+/*-- scss:rules --*/
+
+// Valeurs effectives : la personnalisation si elle existe, sinon le thème
+$_galerie-accent: if($galerie-accent, $galerie-accent, $primary);
+$_galerie-fond: if($galerie-fond-accent, $galerie-fond-accent, rgba($_galerie-accent, .09));
+
+.galerie-cartes {
+  margin: 1.5rem 0 2rem;
+  row-gap: 1.5rem;
+}
+
+// --- La carte ---------------------------------------------------------------
+.carte-galerie {
+  display: flex;            // permet de coller le pied de carte en bas
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-top: 4px solid $_galerie-accent;
+  border-radius: $galerie-rayon;
+  box-shadow: $galerie-ombre;
+  padding: 1.25rem 1.5rem 1rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .10);
+  }
+
+  // Quarto enveloppe le titre ### et tout ce qui suit dans une <section> :
+  // « display: contents » la rend transparente, pour que ses éléments
+  // restent disposés en colonne (et que le pied de carte reste en bas).
+  > section { display: contents; }
+
+  // Les chartes justifient souvent les paragraphes : illisible en colonne étroite
+  p, li { text-align: left; }
+
+  h3 {
+    margin: .25rem 0 .6rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+}
+
+// Citation (sur une carte comme sur une page de détail)
+.carte-galerie blockquote,
+.fiche-detail blockquote {
+  margin: .9rem 0;
+  padding: .1rem 0 .1rem .9rem;
+  border-left: 3px solid $_galerie-accent;
+  font-style: italic;
+  font-size: .95rem;
+  color: #555;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// --- Vignettes d'un listing Quarto en grille (type: grid) --------------------
+// Galerie « image + titre » : chaque vignette mène à une page de détail.
+.quarto-listing .quarto-grid-item.card {
+  overflow: hidden;           // l'image suit l'arrondi de la vignette
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-top: 4px solid $_galerie-accent;
+  border-radius: $galerie-rayon;
+  box-shadow: $galerie-ombre;
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+  }
+
+  .card-img-top,
+  img {
+    width: 100%;
+    object-fit: cover;        // recadre sans déformer
+  }
+
+  .card-body { padding: 1rem 1.25rem 1.25rem; }
+
+  .card-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: left;
+  }
+}
+
+// --- Page de détail (generer_page_detail) ------------------------------------
+.fiche-detail {
+  p, li { text-align: left; }
+
+  // Image en tête de page : entière (c'est souvent une carte à lire)
+  > p:has(img.carte-image) { margin: 0 0 1.25rem; }
+
+  img.carte-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: $galerie-rayon;
+    box-shadow: $galerie-ombre;
+  }
+
+  .carte-bloc { margin: 1rem 0; font-size: 1rem; }
+
+  .carte-pied { margin-top: 1.5rem; }
+}
+
+.fiche-retour {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+// --- Image en tête de carte --------------------------------------------------
+// Quarto place l'image dans un paragraphe (et un lien pour l'agrandir au clic) :
+// on supprime la marge de ce paragraphe.
+.carte-galerie > p:has(img.carte-image) {
+  margin: 0;
+}
+
+.carte-galerie img.carte-image {
+  display: block;             // supprime l'espace laissé sous une image « en ligne »
+  width: calc(100% + 3rem);   // déborde du padding pour occuper toute la largeur
+  max-width: none;
+  height: 180px;
+  object-fit: cover;          // recadre sans déformer
+  margin: -1.25rem -1.5rem .75rem;
+  border-radius: calc(#{$galerie-rayon} - 4px) calc(#{$galerie-rayon} - 4px) 0 0;
+}
+
+// --- Pastilles ---------------------------------------------------------------
+.carte-pastille {
+  display: inline-block;
+  margin: 0 .3rem .3rem 0;
+  padding: .15rem .65rem;
+  border-radius: 999px;
+  background: $_galerie-fond;
+  color: $_galerie-accent;
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+// --- Paragraphe d'introduction (contexte) -------------------------------------
+.carte-introduction {
+  margin: .9rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+
+  p { text-align: left; }
+  p:last-child { margin-bottom: 0; }
+}
+
+// --- Blocs de texte ----------------------------------------------------------
+.carte-bloc {
+  margin: .6rem 0;
+  font-size: .95rem;
+
+  p { margin-bottom: .4rem; }
+}
+
+.carte-bloc-titre {
+  display: block;
+  margin-bottom: .2rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #6f6f6f;
+}
+
+.carte-bloc-accent {
+  padding: .75rem 1rem;
+  border-radius: calc(#{$galerie-rayon} - 4px);
+  background: $_galerie-fond;
+
+  .carte-bloc-titre { color: $_galerie-accent; }
+}
+
+// --- Pied de carte -----------------------------------------------------------
+.carte-pied {
+  margin-top: auto;           // repoussé en bas de la carte
+  padding-top: .6rem;
+  border-top: 1px dashed rgba(0, 0, 0, .15);
+  font-size: .83rem;
+  color: #6f6f6f;
+
+  p { margin-bottom: 0; }
+}

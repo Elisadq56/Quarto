@@ -110,7 +110,7 @@ Le plan de hiérarchisation des voies de NLA permet d’identifier les voies de 
 
 ## Le plan de circulation
 
-## Le plan de modération des vitesses
+## Le plan de modération des vitesses {#plan_moderation}
 
 ## Analyse et traitement des entrées des Zones 30
 
@@ -122,4 +122,3 @@ Le plan de hiérarchisation des voies de NLA permet d’identifier les voies de 
 
 ## Superposition des plans piéton et vélo
 
-::::::
